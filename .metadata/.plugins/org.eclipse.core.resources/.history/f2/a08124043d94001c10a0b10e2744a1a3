@@ -16,7 +16,8 @@ String url = "jdbc:oracle:thin:@localhost:1521:XE";
 Boolean connect = false;
 	
 try{
-    Class.forName(driver);
+    
+	
     conn=DriverManager.getConnection(url,"SCOTT","TIGER"); //자신의 아이디와 비밀번호
     connect = true;
     conn.close();
