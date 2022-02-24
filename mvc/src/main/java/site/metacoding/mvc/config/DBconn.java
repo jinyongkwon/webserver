@@ -8,7 +8,7 @@ import javax.sql.DataSource;
 
 public class DBconn {
 
-	// 책임 : Connection 객체를 return
+	// 책임 : 이미 만들어진 Connection 객체를 return => DBCP(DataBase Connection Pooling)기법
 	public static Connection getConnection() { // 이미 만들어진 Connection을 리턴받기위한 메서드 => 연결하는 코드 x 연결되있는 것을 찾아 접근하는 코드 o
 		Connection  conn = null; // 책임에 대한 것이기 때문에 전역으로 선언. 
 		try {
